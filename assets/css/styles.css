@@ -155,25 +155,36 @@ a {
   min-height: 100vh;
   padding: 132px clamp(18px, 6vw, 76px) 54px;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.58fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: end;
   gap: clamp(28px, 5vw, 74px);
   overflow: hidden;
   color: var(--paper-soft);
-  background: #151515;
+  background: #070706;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(13, 13, 12, 0.94), rgba(13, 13, 12, 0.78) 48%, rgba(13, 13, 12, 0.42)),
-    linear-gradient(0deg, rgba(13, 13, 12, 0.96), rgba(13, 13, 12, 0.18) 48%, rgba(13, 13, 12, 0.42)),
-    url("../img/greve-trabalhadores-largo.png") center / cover,
-    radial-gradient(circle at 76% 24%, rgba(201, 154, 22, 0.2), transparent 32%),
-    #151515;
-  filter: grayscale(1) contrast(1.04);
-  transform: scale(1.04);
+    linear-gradient(90deg, rgba(7, 7, 6, 0.94), rgba(7, 7, 6, 0.72) 42%, rgba(7, 7, 6, 0.38)),
+    linear-gradient(0deg, rgba(7, 7, 6, 0.95), rgba(7, 7, 6, 0.2) 48%, rgba(7, 7, 6, 0.62)),
+    url("../img/trabalhadores-unidos-1929.png") center / cover no-repeat;
+  filter: grayscale(1) contrast(1.18) brightness(0.92);
+  transform: scale(1.05);
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 24% 72%, rgba(201, 154, 22, 0.22), transparent 25%),
+    linear-gradient(rgba(255, 250, 240, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 250, 240, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at center, transparent 38%, rgba(0, 0, 0, 0.58));
+  background-size: auto, 96px 96px, 96px 96px, auto;
+  mix-blend-mode: soft-light;
 }
 
 .hero::after {
@@ -186,10 +197,14 @@ a {
   background: linear-gradient(90deg, var(--gold), transparent);
 }
 
-.hero-content,
-.team-card {
+.hero-content {
   position: relative;
   z-index: 1;
+}
+
+.hero-content {
+  max-width: 920px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.64);
 }
 
 .eyebrow {
@@ -248,50 +263,6 @@ a {
 .primary-action:hover,
 .secondary-action:hover {
   transform: translateY(-3px);
-}
-
-.team-card {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  min-height: 420px;
-  padding: 26px;
-  background: rgba(245, 241, 231, 0.11);
-  border: 1px solid rgba(255, 250, 240, 0.24);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
-}
-
-.team-card p {
-  margin: 0;
-  color: var(--gold-light);
-  font: 700 0.78rem/1.2 Arial, Helvetica, sans-serif;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.team-card h2 {
-  margin: 12px 0 20px;
-  color: var(--paper-soft);
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 0.95;
-}
-
-.team-card ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.team-card li {
-  padding: 10px 12px;
-  background: rgba(0, 0, 0, 0.28);
-  border-left: 3px solid var(--gold);
-  color: rgba(255, 250, 240, 0.9);
 }
 
 section:not(.hero) {
@@ -1042,10 +1013,6 @@ section:not(.hero) {
     align-items: start;
   }
 
-  .team-card {
-    min-height: auto;
-  }
-
   .timeline,
   .economic-grid,
   .impact-grid,
@@ -1073,7 +1040,6 @@ section:not(.hero) {
     font-size: clamp(3.4rem, 18vw, 5.6rem);
   }
 
-  .team-card ul,
   .timeline,
   .economic-grid,
   .impact-grid,
