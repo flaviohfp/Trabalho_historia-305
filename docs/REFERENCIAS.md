@@ -1,13 +1,8 @@
 # Referencias
 
-- PDF enviado pelo grupo: `docs/pesquisas/Trabalho_Crise_de_1929_Contexto_Historico.pdf`.
-- PDF enviado pelo Lucas: `docs/pesquisas/Impactos_Economicos_Crise_1929_Inglaterra-LUCAS.pdf`.
-- PDF enviado pelo Marcos: `docs/pesquisas/Trabalho_Crise_Inglaterra_Completo-MARCOS.pdf`.
-- PDF enviado pela Sofia: `docs/pesquisas/Resumo_Crise_de_1920_Inglaterra-SOFIA.pdf`.
+- The National Archives - Thirties Britain: https://www.nationalarchives.gov.uk/education/resources/thirties-britain/
+- The National Archives - Interwar (1918-1939): https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/interwar/
+- Bank of England - History: https://www.bankofengland.co.uk/about/history
+- Federal Reserve History - The Great Depression: https://www.federalreservehistory.org/essays/great-depression
+- Federal Reserve History - Stock Market Crash of 1929: https://www.federalreservehistory.org/essays/stock-market-crash-of-1929
 - Imagens enviadas pelo grupo e salvas em `assets/img/`.
-- HOBSBAWM, Eric. Era dos Extremos.
-- HOBSBAWM, Eric. A Era dos Imperios.
-- FAUSTO, Boris. Historia do Brasil.
-
-Quando o grupo mandar as pesquisas, podemos completar esta lista com livros,
-sites, videos e artigos usados.
