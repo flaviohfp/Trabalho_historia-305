@@ -386,6 +386,73 @@ section:not(.hero) {
   color: rgba(255, 250, 240, 0.76);
 }
 
+.economic-section {
+  color: var(--paper-soft);
+  background:
+    linear-gradient(135deg, rgba(35, 63, 95, 0.32), transparent 40%),
+    linear-gradient(45deg, rgba(201, 154, 22, 0.16), transparent 58%),
+    var(--ink);
+}
+
+.economic-section .section-heading h2 {
+  color: var(--paper-soft);
+}
+
+.economic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.economic-card {
+  min-height: 250px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 250, 240, 0.16);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.economic-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.economic-card span {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: var(--gold-light);
+  font: 700 0.82rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.economic-card h3 {
+  margin: 0 0 14px;
+  color: var(--gold-light);
+  font-size: clamp(1.45rem, 2.5vw, 2.15rem);
+}
+
+.economic-card p,
+.economic-summary p {
+  margin: 0;
+  color: rgba(255, 250, 240, 0.8);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.economic-summary {
+  margin-top: 20px;
+  padding: clamp(24px, 4vw, 38px);
+  color: var(--paper-soft);
+  background: rgba(255, 250, 240, 0.08);
+  border-left: 5px solid var(--gold);
+}
+
+.economic-summary h3 {
+  margin: 0 0 12px;
+  color: var(--gold-light);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+}
+
 .intro-section {
   background: var(--paper);
 }
@@ -814,6 +881,7 @@ section:not(.hero) {
   }
 
   .timeline,
+  .economic-grid,
   .impact-grid,
   .stats-panel ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -840,6 +908,7 @@ section:not(.hero) {
 
   .team-card ul,
   .timeline,
+  .economic-grid,
   .impact-grid,
   .stats-panel ul {
     grid-template-columns: 1fr;

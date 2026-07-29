@@ -1,6 +1,7 @@
 # Referencias
 
 - PDF enviado pelo grupo: `docs/pesquisas/Trabalho_Crise_de_1929_Contexto_Historico.pdf`.
+- PDF enviado pelo Lucas: `docs/pesquisas/Impactos_Economicos_Crise_1929_Inglaterra-LUCAS.pdf`.
 - PDF enviado pelo Marcos: `docs/pesquisas/Trabalho_Crise_Inglaterra_Completo-MARCOS.pdf`.
 - HOBSBAWM, Eric. Era dos Extremos.
 - HOBSBAWM, Eric. A Era dos Imperios.
