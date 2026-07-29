@@ -13,7 +13,11 @@ Site escolar sobre a Crise de 1929 na Inglaterra.
 │   ├── js/
 │   │   └── main.js
 │   ├── img/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── fila-trabalhadores.png
+│   │   ├── greve-trabalhadores-largo.png
+│   │   ├── greve-trabalhadores-recorte.png
+│   │   └── mina-courrieres-ilustracao.png
 │   └── data/
 │       └── README.md
 ├── docs/

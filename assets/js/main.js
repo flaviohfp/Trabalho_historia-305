@@ -3,7 +3,10 @@ const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
 const revealItems = document.querySelectorAll(".reveal");
-const slides = Array.from(document.querySelectorAll(".slide"));
+const carousel = document.querySelector("[data-carousel]");
+const slides = Array.from(document.querySelectorAll(".gallery-slide"));
+const dots = Array.from(document.querySelectorAll(".gallery-dot"));
+const thumbs = Array.from(document.querySelectorAll(".thumb"));
 const prevButton = document.querySelector("[data-prev]");
 const nextButton = document.querySelector("[data-next]");
 const quiz = document.querySelector("[data-quiz]");
@@ -33,6 +36,14 @@ function showSlide(index) {
   activeSlide = (index + slides.length) % slides.length;
   slides.forEach((slide, currentIndex) => {
     slide.classList.toggle("active", currentIndex === activeSlide);
+  });
+
+  dots.forEach((dot, currentIndex) => {
+    dot.classList.toggle("active", currentIndex === activeSlide);
+  });
+
+  thumbs.forEach((thumb, currentIndex) => {
+    thumb.classList.toggle("active", currentIndex === activeSlide);
   });
 }
 
@@ -107,6 +118,16 @@ nav.addEventListener("click", (event) => {
 if (prevButton && nextButton) {
   prevButton.addEventListener("click", () => showSlide(activeSlide - 1));
   nextButton.addEventListener("click", () => showSlide(activeSlide + 1));
+}
+
+if (carousel) {
+  carousel.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-slide-to]");
+
+    if (trigger) {
+      showSlide(Number(trigger.dataset.slideTo));
+    }
+  });
 }
 
 if (quiz) {
