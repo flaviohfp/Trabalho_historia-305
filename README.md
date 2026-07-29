@@ -17,7 +17,9 @@ Site escolar sobre a Crise de 1929 na Inglaterra.
 │   └── data/
 │       └── README.md
 ├── docs/
-│   └── REFERENCIAS.md
+│   ├── REFERENCIAS.md
+│   └── pesquisas/
+│       └── Trabalho_Crise_de_1929_Contexto_Historico.pdf
 └── README.md
 ```
 
@@ -32,3 +34,4 @@ Abra `index.html` no navegador.
 - `assets/img/`: fotos finais do trabalho.
 - `assets/data/`: pesquisas, legendas e dados de apoio.
 - `docs/REFERENCIAS.md`: fontes usadas na pesquisa.
+- `docs/pesquisas/`: PDFs originais enviados pelo grupo.
