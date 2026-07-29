@@ -500,6 +500,22 @@ section:not(.hero) {
   gap: 18px;
 }
 
+.impact-summary {
+  max-width: 980px;
+  margin: -10px 0 28px;
+  padding: clamp(22px, 3vw, 32px);
+  background: rgba(255, 250, 240, 0.72);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--gold);
+}
+
+.impact-summary p {
+  margin: 0;
+  color: #3a362f;
+  font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+  line-height: 1.75;
+}
+
 .impact-card {
   min-height: 260px;
   padding: 28px;
@@ -514,13 +530,51 @@ section:not(.hero) {
 }
 
 .impact-card:nth-child(2) h3,
-.impact-card:nth-child(2) span {
+.impact-card:nth-child(2) span,
+.impact-card:nth-child(5) h3,
+.impact-card:nth-child(5) span {
   color: var(--green);
 }
 
 .impact-card:nth-child(3) h3,
-.impact-card:nth-child(3) span {
+.impact-card:nth-child(3) span,
+.impact-card:nth-child(6) h3,
+.impact-card:nth-child(6) span {
   color: var(--blue);
+}
+
+.stats-panel {
+  margin-top: 22px;
+  padding: clamp(24px, 4vw, 38px);
+  color: var(--paper-soft);
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.stats-panel h3 {
+  margin: 0 0 18px;
+  color: var(--gold-light);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+}
+
+.stats-panel ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: rgba(255, 250, 240, 0.16);
+  border: 1px solid rgba(255, 250, 240, 0.16);
+}
+
+.stats-panel li {
+  min-height: 150px;
+  padding: 20px;
+  color: rgba(255, 250, 240, 0.82);
+  background: #23231f;
+  font-size: 1.04rem;
+  line-height: 1.65;
 }
 
 .measures-section {
@@ -727,7 +781,8 @@ section:not(.hero) {
   }
 
   .timeline,
-  .impact-grid {
+  .impact-grid,
+  .stats-panel ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -752,7 +807,8 @@ section:not(.hero) {
 
   .team-card ul,
   .timeline,
-  .impact-grid {
+  .impact-grid,
+  .stats-panel ul {
     grid-template-columns: 1fr;
   }
 
