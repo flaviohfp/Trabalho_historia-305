@@ -274,6 +274,20 @@ section:not(.hero) {
   margin-bottom: 34px;
 }
 
+.section-heading .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  color: var(--red);
+  background: rgba(255, 250, 240, 0.86);
+  border: 1px solid rgba(126, 36, 29, 0.2);
+  border-left: 4px solid var(--red);
+  box-shadow: 0 10px 24px rgba(22, 22, 19, 0.08);
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+}
+
 .section-heading h2 {
   margin: 0;
   color: var(--ink);
