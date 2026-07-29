@@ -24,6 +24,10 @@ function toggleMenu() {
 }
 
 function showSlide(index) {
+  if (!slides.length) {
+    return;
+  }
+
   activeSlide = (index + slides.length) % slides.length;
   slides.forEach((slide, currentIndex) => {
     slide.classList.toggle("active", currentIndex === activeSlide);
@@ -53,8 +57,10 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-prevButton.addEventListener("click", () => showSlide(activeSlide - 1));
-nextButton.addEventListener("click", () => showSlide(activeSlide + 1));
+if (prevButton && nextButton) {
+  prevButton.addEventListener("click", () => showSlide(activeSlide - 1));
+  nextButton.addEventListener("click", () => showSlide(activeSlide + 1));
+}
 
 window.addEventListener("scroll", updateHeader, { passive: true });
 window.addEventListener("keydown", (event) => {
@@ -62,11 +68,11 @@ window.addEventListener("keydown", (event) => {
     closeMenu();
   }
 
-  if (event.key === "ArrowLeft") {
+  if (slides.length && event.key === "ArrowLeft") {
     showSlide(activeSlide - 1);
   }
 
-  if (event.key === "ArrowRight") {
+  if (slides.length && event.key === "ArrowRight") {
     showSlide(activeSlide + 1);
   }
 });

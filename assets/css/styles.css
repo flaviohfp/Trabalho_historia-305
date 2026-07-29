@@ -167,10 +167,12 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(13, 13, 12, 0.92), rgba(13, 13, 12, 0.74) 46%, rgba(13, 13, 12, 0.48)),
-    linear-gradient(0deg, rgba(13, 13, 12, 0.96), rgba(13, 13, 12, 0.1) 44%, rgba(13, 13, 12, 0.45)),
-    url("https://upload.wikimedia.org/wikipedia/commons/9/98/Bundesarchiv_Bild_102-10246%2C_England%2C_Arbeitslose_vor_Gewerkschaftshaus.jpg") center / cover;
-  filter: grayscale(1);
+    linear-gradient(90deg, rgba(13, 13, 12, 0.94), rgba(13, 13, 12, 0.78) 48%, rgba(13, 13, 12, 0.58)),
+    linear-gradient(0deg, rgba(13, 13, 12, 0.96), rgba(13, 13, 12, 0.18) 48%, rgba(13, 13, 12, 0.4)),
+    repeating-linear-gradient(90deg, rgba(255, 250, 240, 0.08) 0 1px, transparent 1px 90px),
+    repeating-linear-gradient(0deg, rgba(255, 250, 240, 0.05) 0 1px, transparent 1px 72px),
+    radial-gradient(circle at 76% 24%, rgba(201, 154, 22, 0.2), transparent 32%),
+    #151515;
   transform: scale(1.04);
 }
 
@@ -333,6 +335,10 @@ section:not(.hero) {
   margin: 0 0 14px;
   color: var(--gold);
   font-size: clamp(1.55rem, 3vw, 2.45rem);
+}
+
+.context-main h3:not(:first-child) {
+  margin-top: 28px;
 }
 
 .context-main p,
@@ -612,6 +618,33 @@ section:not(.hero) {
 
 .gallery-section {
   background: var(--paper-soft);
+}
+
+.sources-section {
+  color: var(--paper-soft);
+  background: linear-gradient(120deg, #151513, #262018 48%, #1f3029);
+}
+
+.sources-section .section-heading h2 {
+  color: var(--paper-soft);
+}
+
+.source-list {
+  display: grid;
+  gap: 12px;
+  max-width: 980px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.source-list li {
+  padding: 18px 20px;
+  color: rgba(255, 250, 240, 0.86);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-left: 4px solid var(--gold);
+  font: 700 0.98rem/1.5 Arial, Helvetica, sans-serif;
 }
 
 .carousel {

@@ -11,7 +11,7 @@ Resumo adaptado do PDF `Trabalho_Crise_de_1929_Contexto_Historico.pdf`.
 - Em outubro de 1929, a queda da Bolsa de Nova York iniciou uma crise financeira profunda.
 - Bancos quebraram, empresas faliram, o desemprego aumentou e o comercio internacional entrou em retracao.
 - A crise se espalhou porque os EUA financiavam governos, empresas e bancos em varios paises.
-- A Inglaterra foi atingida pela queda do comercio mundial e pela fragilidade de setores industriais tradicionais.
+- A crise atingiu inclusive a Inglaterra, Alemanha e paises exportadores de materias-primas.
 
 ## Referencias citadas no PDF
 
