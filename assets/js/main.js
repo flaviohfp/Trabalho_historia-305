@@ -10,7 +10,6 @@ const thumbs = Array.from(document.querySelectorAll(".thumb"));
 const prevButton = document.querySelector("[data-prev]");
 const nextButton = document.querySelector("[data-next]");
 const quiz = document.querySelector("[data-quiz]");
-const quizResult = document.querySelector("[data-quiz-result]");
 
 let activeSlide = 0;
 
@@ -67,36 +66,27 @@ function getQuestionLabel(value) {
   return value ? value.toUpperCase() : "";
 }
 
-function gradeQuiz(event) {
-  event.preventDefault();
+function checkQuizCard(card) {
+  const answer = card.dataset.answer;
+  const explanation = card.dataset.explanation || "";
+  const selected = card.querySelector("input:checked");
+  const feedback = card.querySelector(".quiz-feedback");
 
-  const cards = Array.from(quiz.querySelectorAll(".quiz-card"));
-  let score = 0;
+  card.classList.remove("correct", "wrong");
 
-  cards.forEach((card) => {
-    const answer = card.dataset.answer;
-    const selected = card.querySelector("input:checked");
-    const feedback = card.querySelector(".quiz-feedback");
+  if (!selected) {
+    feedback.textContent = "Escolha uma alternativa antes de verificar.";
+    return;
+  }
 
-    card.classList.remove("correct", "wrong");
+  if (selected.value === answer) {
+    card.classList.add("correct");
+    feedback.textContent = `Correto! ${explanation}`;
+    return;
+  }
 
-    if (!selected) {
-      feedback.textContent = "Escolha uma alternativa.";
-      return;
-    }
-
-    if (selected.value === answer) {
-      score += 1;
-      card.classList.add("correct");
-      feedback.textContent = "Resposta correta.";
-      return;
-    }
-
-    card.classList.add("wrong");
-    feedback.textContent = `Resposta incorreta. Gabarito: ${getQuestionLabel(answer)}.`;
-  });
-
-  quizResult.textContent = `Voce acertou ${score} de ${cards.length} perguntas.`;
+  card.classList.add("wrong");
+  feedback.textContent = `Incorreto. Resposta certa: ${getQuestionLabel(answer)}. ${explanation}`;
 }
 
 function resetQuiz() {
@@ -104,8 +94,6 @@ function resetQuiz() {
     card.classList.remove("correct", "wrong");
     card.querySelector(".quiz-feedback").textContent = "";
   });
-
-  quizResult.textContent = "";
 }
 
 menuToggle.addEventListener("click", toggleMenu);
@@ -131,7 +119,13 @@ if (carousel) {
 }
 
 if (quiz) {
-  quiz.addEventListener("submit", gradeQuiz);
+  quiz.addEventListener("click", (event) => {
+    const checkButton = event.target.closest("[data-check-answer]");
+
+    if (checkButton) {
+      checkQuizCard(checkButton.closest(".quiz-card"));
+    }
+  });
   quiz.addEventListener("reset", resetQuiz);
 }
 

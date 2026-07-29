@@ -691,6 +691,12 @@ section:not(.hero) {
   flex: 0 0 auto;
 }
 
+.quiz-check {
+  margin-top: 16px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .quiz-feedback {
   min-height: 24px;
   margin: 14px 0 0;
@@ -713,7 +719,6 @@ section:not(.hero) {
   margin-top: 10px;
 }
 
-.quiz-submit,
 .quiz-reset {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;

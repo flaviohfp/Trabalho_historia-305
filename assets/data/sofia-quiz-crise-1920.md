@@ -1,21 +1,24 @@
-# Pesquisa da Sofia - Quiz sobre a Crise de 1920 na Inglaterra
+# Quiz para apresentacao em grupos
 
-Resumo fiel ao PDF `Resumo_Crise_de_1920_Inglaterra-SOFIA.pdf`.
+Perguntas adaptadas para uma dinamica com outra turma, usando linguagem mais
+simples e ligada aos conteudos apresentados no site.
 
 ## Temas do resumo
 
-- Consequencias: desemprego elevado, falencia de empresas, queda das exportacoes, grande endividamento e perda da lideranca economica para os Estados Unidos.
-- Mudancas politicas: fortalecimento do Partido Trabalhista, primeiro governo em 1924 e Greve Geral de 1926.
-- Impacto social: aumento da pobreza, desemprego, migracao, fortalecimento dos sindicatos e mudancas nos habitos de consumo.
-- Curiosidades: em 1921 havia mais de 2 milhoes de desempregados, a industria do carvao foi a mais afetada e o retorno ao Padrao-Ouro em 1925 dificultou a recuperacao economica.
+- Contexto do pos-guerra: dividas, inflacao e dificuldades produtivas.
+- Inicio da Crise de 1929: queda da Bolsa de Nova York.
+- Impactos economicos na Inglaterra: queda das exportacoes, fechamento de empresas e desemprego.
+- Setores afetados: carvao, aco, construcao naval e textil.
+- Impactos sociais: pobreza, fome, auxilios e fortalecimento dos sindicatos.
+- Recuperacao: abandono do padrao-ouro, desvalorizacao da libra, obras publicas e novas industrias.
 
 ## Gabarito
 
 1. B
 2. C
-3. B
-4. C
+3. A
+4. D
 5. B
 6. C
-7. C
+7. A
 8. C
