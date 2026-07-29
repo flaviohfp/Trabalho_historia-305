@@ -6,6 +6,8 @@ const revealItems = document.querySelectorAll(".reveal");
 const slides = Array.from(document.querySelectorAll(".slide"));
 const prevButton = document.querySelector("[data-prev]");
 const nextButton = document.querySelector("[data-next]");
+const quiz = document.querySelector("[data-quiz]");
+const quizResult = document.querySelector("[data-quiz-result]");
 
 let activeSlide = 0;
 
@@ -50,6 +52,51 @@ function startRevealObserver() {
   revealItems.forEach((item) => observer.observe(item));
 }
 
+function getQuestionLabel(value) {
+  return value ? value.toUpperCase() : "";
+}
+
+function gradeQuiz(event) {
+  event.preventDefault();
+
+  const cards = Array.from(quiz.querySelectorAll(".quiz-card"));
+  let score = 0;
+
+  cards.forEach((card) => {
+    const answer = card.dataset.answer;
+    const selected = card.querySelector("input:checked");
+    const feedback = card.querySelector(".quiz-feedback");
+
+    card.classList.remove("correct", "wrong");
+
+    if (!selected) {
+      feedback.textContent = "Escolha uma alternativa.";
+      return;
+    }
+
+    if (selected.value === answer) {
+      score += 1;
+      card.classList.add("correct");
+      feedback.textContent = "Resposta correta.";
+      return;
+    }
+
+    card.classList.add("wrong");
+    feedback.textContent = `Resposta incorreta. Gabarito: ${getQuestionLabel(answer)}.`;
+  });
+
+  quizResult.textContent = `Voce acertou ${score} de ${cards.length} perguntas.`;
+}
+
+function resetQuiz() {
+  quiz.querySelectorAll(".quiz-card").forEach((card) => {
+    card.classList.remove("correct", "wrong");
+    card.querySelector(".quiz-feedback").textContent = "";
+  });
+
+  quizResult.textContent = "";
+}
+
 menuToggle.addEventListener("click", toggleMenu);
 nav.addEventListener("click", (event) => {
   if (event.target.matches("a")) {
@@ -60,6 +107,11 @@ nav.addEventListener("click", (event) => {
 if (prevButton && nextButton) {
   prevButton.addEventListener("click", () => showSlide(activeSlide - 1));
   nextButton.addEventListener("click", () => showSlide(activeSlide + 1));
+}
+
+if (quiz) {
+  quiz.addEventListener("submit", gradeQuiz);
+  quiz.addEventListener("reset", resetQuiz);
 }
 
 window.addEventListener("scroll", updateHeader, { passive: true });

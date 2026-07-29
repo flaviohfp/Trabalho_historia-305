@@ -21,7 +21,8 @@ Site escolar sobre a Crise de 1929 na Inglaterra.
 │   └── pesquisas/
 │       ├── Trabalho_Crise_de_1929_Contexto_Historico.pdf
 │       ├── Impactos_Economicos_Crise_1929_Inglaterra-LUCAS.pdf
-│       └── Trabalho_Crise_Inglaterra_Completo-MARCOS.pdf
+│       ├── Trabalho_Crise_Inglaterra_Completo-MARCOS.pdf
+│       └── Resumo_Crise_de_1920_Inglaterra-SOFIA.pdf
 └── README.md
 ```
 
