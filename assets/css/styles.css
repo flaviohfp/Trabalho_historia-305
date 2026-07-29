@@ -952,6 +952,48 @@ section:not(.hero) {
   font: 700 0.98rem/1.5 Arial, Helvetica, sans-serif;
 }
 
+.group-section {
+  background:
+    linear-gradient(135deg, rgba(126, 36, 29, 0.12), transparent 44%),
+    var(--paper-soft);
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.group-card {
+  min-height: 210px;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 16px 38px rgba(22, 22, 19, 0.08);
+}
+
+.group-card span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--red);
+  font: 700 0.78rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.group-card h3 {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.group-card p {
+  margin: 0;
+  color: #3a362f;
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -1016,6 +1058,7 @@ section:not(.hero) {
   .timeline,
   .economic-grid,
   .impact-grid,
+  .group-grid,
   .stats-panel ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1043,6 +1086,7 @@ section:not(.hero) {
   .timeline,
   .economic-grid,
   .impact-grid,
+  .group-grid,
   .stats-panel ul {
     grid-template-columns: 1fr;
   }
