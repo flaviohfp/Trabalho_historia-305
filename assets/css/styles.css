@@ -642,9 +642,65 @@ section:not(.hero) {
     var(--paper-soft);
 }
 
+.closing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 18px;
+  margin: -8px 0 28px;
+}
+
+.closing-panel {
+  padding: clamp(22px, 3vw, 32px);
+  background: rgba(245, 241, 231, 0.9);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 34px rgba(22, 22, 19, 0.08);
+}
+
+.closing-panel span {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: var(--red);
+  font: 800 0.74rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.closing-panel h3 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.4vw, 2.05rem);
+  line-height: 1.18;
+}
+
+.closing-panel p,
+.closing-panel li {
+  color: #353129;
+  font-size: 1.03rem;
+  line-height: 1.68;
+}
+
+.closing-panel p {
+  margin: 0;
+}
+
+.closing-panel ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.conclusion-panel {
+  border-left: 5px solid var(--red);
+}
+
+.curiosity-panel {
+  border-left: 5px solid var(--gold);
+}
+
 .quiz-intro {
   max-width: 860px;
-  margin: -10px 0 28px;
+  margin: 0 0 28px;
   padding: 22px 26px;
   background: var(--ink);
   border-left: 5px solid var(--gold);
@@ -749,6 +805,12 @@ section:not(.hero) {
 
 .quiz-result:empty {
   display: none;
+}
+
+@media (max-width: 820px) {
+  .closing-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .measures-section {
