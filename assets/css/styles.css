@@ -832,6 +832,10 @@ section:not(.hero) {
   line-height: 1.65;
 }
 
+.quiz-intro p + p {
+  margin-top: 14px;
+}
+
 .quiz-form {
   display: grid;
   gap: 16px;
@@ -880,7 +884,8 @@ section:not(.hero) {
   flex: 0 0 auto;
 }
 
-.quiz-check {
+.quiz-check,
+.quiz-score {
   margin-top: 16px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;

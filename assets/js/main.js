@@ -89,11 +89,48 @@ function checkQuizCard(card) {
   feedback.textContent = `Incorreto. Resposta certa: ${getQuestionLabel(answer)}. ${explanation}`;
 }
 
+function scoreQuiz() {
+  const cards = Array.from(quiz.querySelectorAll(".quiz-card"));
+  const result = quiz.querySelector("[data-quiz-result]");
+  let correct = 0;
+  let unanswered = 0;
+
+  cards.forEach((card) => {
+    const selected = card.querySelector("input:checked");
+
+    if (!selected) {
+      unanswered += 1;
+      return;
+    }
+
+    if (selected.value === card.dataset.answer) {
+      correct += 1;
+    }
+  });
+
+  const total = cards.length;
+  const pendingMessage = unanswered
+    ? ` Ainda falta responder ${unanswered} pergunta${unanswered > 1 ? "s" : ""}.`
+    : "";
+  const disputeMessage =
+    correct === total
+      ? "Pontuação máxima! Esse grupo vai forte para o desempate."
+      : "Em disputa por grupos, vence quem fizer mais pontos; empate vai para uma pergunta relâmpago.";
+
+  result.textContent = `Pontuação: ${correct} de ${total} acertos.${pendingMessage} ${disputeMessage}`;
+}
+
 function resetQuiz() {
   quiz.querySelectorAll(".quiz-card").forEach((card) => {
     card.classList.remove("correct", "wrong");
     card.querySelector(".quiz-feedback").textContent = "";
   });
+
+  const result = quiz.querySelector("[data-quiz-result]");
+
+  if (result) {
+    result.textContent = "";
+  }
 }
 
 menuToggle.addEventListener("click", toggleMenu);
@@ -124,6 +161,10 @@ if (quiz) {
 
     if (checkButton) {
       checkQuizCard(checkButton.closest(".quiz-card"));
+    }
+
+    if (event.target.closest("[data-score-quiz]")) {
+      scoreQuiz();
     }
   });
   quiz.addEventListener("reset", resetQuiz);
