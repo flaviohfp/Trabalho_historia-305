@@ -965,6 +965,27 @@ section:not(.hero) {
   text-transform: uppercase;
 }
 
+.measure-points {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.measure-points li {
+  padding: 14px 16px;
+  color: rgba(255, 250, 240, 0.86);
+  border-left: 3px solid var(--gold-light);
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.measure-points strong {
+  color: var(--paper-soft);
+}
+
 .gallery-section {
   background:
     linear-gradient(135deg, rgba(49, 82, 67, 0.12), transparent 42%),
