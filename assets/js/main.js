@@ -14,15 +14,27 @@ const quiz = document.querySelector("[data-quiz]");
 let activeSlide = 0;
 
 function updateHeader() {
+  if (!header) {
+    return;
+  }
+
   header.classList.toggle("scrolled", window.scrollY > 20);
 }
 
 function closeMenu() {
   body.classList.remove("menu-open");
+  if (!menuToggle) {
+    return;
+  }
+
   menuToggle.setAttribute("aria-expanded", "false");
 }
 
 function toggleMenu() {
+  if (!menuToggle) {
+    return;
+  }
+
   const isOpen = body.classList.toggle("menu-open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
 }
@@ -47,6 +59,11 @@ function showSlide(index) {
 }
 
 function startRevealObserver() {
+  if (!("IntersectionObserver" in window)) {
+    revealItems.forEach((item) => item.classList.add("visible"));
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -56,10 +73,17 @@ function startRevealObserver() {
         }
       });
     },
-    { threshold: 0.14 }
+    { rootMargin: "0px 0px -8% 0px", threshold: 0 }
   );
 
-  revealItems.forEach((item) => observer.observe(item));
+  revealItems.forEach((item) => {
+    if (item.scrollHeight > window.innerHeight * 1.2) {
+      item.classList.add("visible");
+      return;
+    }
+
+    observer.observe(item);
+  });
 }
 
 function getQuestionLabel(value) {
@@ -67,6 +91,10 @@ function getQuestionLabel(value) {
 }
 
 function checkQuizCard(card) {
+  if (!card) {
+    return;
+  }
+
   const answer = card.dataset.answer;
   const explanation = card.dataset.explanation || "";
   const selected = card.querySelector("input:checked");
@@ -90,10 +118,18 @@ function checkQuizCard(card) {
 }
 
 function scoreQuiz() {
+  if (!quiz) {
+    return;
+  }
+
   const cards = Array.from(quiz.querySelectorAll(".quiz-card"));
   const result = quiz.querySelector("[data-quiz-result]");
   let correct = 0;
   let unanswered = 0;
+
+  if (!result) {
+    return;
+  }
 
   cards.forEach((card) => {
     const selected = card.querySelector("input:checked");
@@ -121,6 +157,10 @@ function scoreQuiz() {
 }
 
 function resetQuiz() {
+  if (!quiz) {
+    return;
+  }
+
   quiz.querySelectorAll(".quiz-card").forEach((card) => {
     card.classList.remove("correct", "wrong");
     card.querySelector(".quiz-feedback").textContent = "";
@@ -133,12 +173,17 @@ function resetQuiz() {
   }
 }
 
-menuToggle.addEventListener("click", toggleMenu);
-nav.addEventListener("click", (event) => {
-  if (event.target.matches("a")) {
-    closeMenu();
-  }
-});
+if (menuToggle) {
+  menuToggle.addEventListener("click", toggleMenu);
+}
+
+if (nav) {
+  nav.addEventListener("click", (event) => {
+    if (event.target.matches("a")) {
+      closeMenu();
+    }
+  });
+}
 
 if (prevButton && nextButton) {
   prevButton.addEventListener("click", () => showSlide(activeSlide - 1));
