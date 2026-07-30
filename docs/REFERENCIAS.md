@@ -1,4 +1,4 @@
-# Referencias
+# Referências
 
 - The National Archives - Thirties Britain: https://www.nationalarchives.gov.uk/education/resources/thirties-britain/
 - The National Archives - Interwar (1918-1939): https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/interwar/

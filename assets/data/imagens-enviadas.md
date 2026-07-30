@@ -10,4 +10,4 @@ Arquivos copiados para `assets/img/`:
 Uso atual:
 
 - Fundo da tela inicial.
-- Carrossel da secao "Galeria da crise e dos trabalhadores".
+- Carrossel da seção "Galeria da crise e dos trabalhadores".

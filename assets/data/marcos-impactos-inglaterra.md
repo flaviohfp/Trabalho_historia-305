@@ -4,19 +4,19 @@ Resumo fiel ao PDF `Trabalho_Crise_Inglaterra_Completo-MARCOS.pdf`.
 
 ## Pontos principais
 
-- A Crise de 1929 reduziu o consumo em varios paises.
+- A Crise de 1929 reduziu o consumo em vários países.
 - A Inglaterra vendeu menos produtos para o exterior.
-- A queda das exportacoes diminuiu os lucros das empresas e enfraqueceu a economia britanica.
-- Com a reducao das vendas, muitas empresas demitiram funcionarios.
-- Milhoes de pessoas ficaram desempregadas, especialmente nas regioes industriais do norte da Inglaterra, Pais de Gales e Escocia.
-- Diversas fabricas, minas e estaleiros fecharam ou diminuiram suas atividades por falta de clientes e dinheiro para manter a producao.
-- As industrias de carvao, aco, construcao naval e textil foram as mais afetadas.
-- A producao caiu, investimentos foram suspensos e muitas cidades industriais entraram em crise.
-- O aumento do desemprego trouxe pobreza, fome e dificuldades para milhares de familias.
-- Muitas pessoas passaram a depender de auxilios do governo e de instituicoes de caridade.
+- A queda das exportações diminuiu os lucros das empresas e enfraqueceu a economia britânica.
+- Com a redução das vendas, muitas empresas demitiram funcionários.
+- Milhões de pessoas ficaram desempregadas, especialmente nas regiões industriais do norte da Inglaterra, do País de Gales e da Escócia.
+- Diversas fábricas, minas e estaleiros fecharam ou diminuíram suas atividades por falta de clientes e dinheiro para manter a produção.
+- As indústrias de carvão, aço, construção naval e têxtil foram as mais afetadas.
+- A produção caiu, investimentos foram suspensos e muitas cidades industriais entraram em crise.
+- O aumento do desemprego trouxe pobreza, fome e dificuldades para milhares de famílias.
+- Muitas pessoas passaram a depender de auxílios do governo e de instituições de caridade.
 
-## Dados e estatisticas
+## Dados e estatísticas
 
-- Em algumas regioes, o desemprego ultrapassou 20% no inicio da decada de 1930.
-- A participacao britanica no comercio mundial caiu de cerca de 15,2% em 1913 para 12,8% em 1938.
-- Em 1931, a Inglaterra abandonou o padrao-ouro e desvalorizou a libra para tentar recuperar a economia.
+- Em algumas regiões, o desemprego ultrapassou 20% no início da década de 1930.
+- A participação britânica no comércio mundial caiu de cerca de 15,2% em 1913 para 12,8% em 1938.
+- Em setembro de 1931, o Reino Unido abandonou o padrão-ouro e desvalorizou a libra para tentar recuperar a economia.

@@ -1,16 +1,16 @@
-# Quiz para apresentacao em grupos
+# Quiz para apresentação em grupos
 
-Perguntas adaptadas para uma dinamica com outra turma, usando linguagem mais
-simples e ligada aos conteudos apresentados no site.
+Perguntas adaptadas para uma dinâmica com outra turma, usando linguagem mais
+simples e ligada aos conteúdos apresentados no site.
 
 ## Temas do resumo
 
-- Contexto do pos-guerra: dividas, inflacao e dificuldades produtivas.
-- Inicio da Crise de 1929: queda da Bolsa de Nova York.
-- Impactos economicos na Inglaterra: queda das exportacoes, fechamento de empresas e desemprego.
-- Setores afetados: carvao, aco, construcao naval e textil.
-- Impactos sociais: pobreza, fome, auxilios e fortalecimento dos sindicatos.
-- Recuperacao: abandono do padrao-ouro, desvalorizacao da libra, obras publicas e novas industrias.
+- Contexto do pós-guerra: dívidas, inflação e dificuldades produtivas.
+- Início da Crise de 1929: queda da Bolsa de Nova York.
+- Impactos econômicos na Inglaterra: queda das exportações, fechamento de empresas e desemprego.
+- Setores afetados: carvão, aço, construção naval e têxtil.
+- Impactos sociais: pobreza, fome, auxílios e fortalecimento dos sindicatos.
+- Recuperação: abandono do padrão-ouro, desvalorização da libra, crédito mais barato, proteção comercial e novas indústrias.
 
 ## Gabarito
 

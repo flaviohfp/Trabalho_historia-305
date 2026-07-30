@@ -1,20 +1,20 @@
-# Contexto historico e origem da Crise de 1929
+# Contexto histórico e origem da Crise de 1929
 
 Resumo adaptado do PDF `Trabalho_Crise_de_1929_Contexto_Historico.pdf`.
 
 ## Ideias principais
 
-- Depois da Primeira Guerra Mundial, a economia europeia enfrentava dividas, inflacao e dificuldades produtivas.
-- Os Estados Unidos se tornaram a principal potencia economica e financeira da decada de 1920.
-- Os "Loucos Anos Vinte" foram marcados por crescimento industrial, credito, consumo e aumento dos investimentos na Bolsa.
-- Esse crescimento escondia problemas estruturais: superproducao, desigualdade de renda, especulacao financeira e compra de acoes com dinheiro emprestado.
+- Depois da Primeira Guerra Mundial, a economia europeia enfrentava dívidas, inflação e dificuldades produtivas.
+- Os Estados Unidos se tornaram a principal potência econômica e financeira da década de 1920.
+- Os "Loucos Anos Vinte" foram marcados por crescimento industrial, crédito, consumo e aumento dos investimentos na Bolsa.
+- Esse crescimento escondia problemas estruturais: superprodução, desigualdade de renda, especulação financeira e compra de ações com dinheiro emprestado.
 - Em outubro de 1929, a queda da Bolsa de Nova York iniciou uma crise financeira profunda.
-- Bancos quebraram, empresas faliram, o desemprego aumentou e o comercio internacional entrou em retracao.
-- A crise se espalhou porque os EUA financiavam governos, empresas e bancos em varios paises.
-- A crise atingiu inclusive a Inglaterra, Alemanha e paises exportadores de materias-primas.
+- Bancos quebraram, empresas faliram, o desemprego aumentou e o comércio internacional entrou em retração.
+- A crise se espalhou porque os EUA financiavam governos, empresas e bancos em vários países.
+- A crise atingiu inclusive a Inglaterra, a Alemanha e países exportadores de matérias-primas.
 
-## Referencias citadas no PDF
+## Referências citadas no PDF
 
 - HOBSBAWM, Eric. Era dos Extremos.
-- HOBSBAWM, Eric. A Era dos Imperios.
-- FAUSTO, Boris. Historia do Brasil.
+- HOBSBAWM, Eric. A Era dos Impérios.
+- FAUSTO, Boris. História do Brasil.

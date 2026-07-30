@@ -1,4 +1,4 @@
-# Trabalho de Historia - Turma 305
+# Trabalho de História - Turma 305
 
 Site escolar sobre a Crise de 1929 na Inglaterra.
 
@@ -37,7 +37,7 @@ Abra `index.html` no navegador.
 ## Onde colocar cada coisa
 
 - `assets/css/styles.css`: visual do site.
-- `assets/js/main.js`: menu, carrossel e animacoes.
+- `assets/js/main.js`: menu, carrossel e animações.
 - `assets/img/`: fotos finais do trabalho.
 - `assets/data/`: pesquisas, legendas e dados de apoio.
 - `docs/REFERENCIAS.md`: fontes usadas na pesquisa.

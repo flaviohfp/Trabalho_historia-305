@@ -2,7 +2,7 @@
 
 Coloque aqui as imagens finais do trabalho.
 
-Sugestao de nomes:
+Sugestão de nomes:
 
 - `crise-inglaterra-01.jpg`
 - `crise-inglaterra-02.jpg`
@@ -11,5 +11,5 @@ Sugestao de nomes:
 Depois basta trocar o `src` das imagens no `index.html` para caminhos como:
 
 ```html
-<img src="assets/img/crise-inglaterra-01.jpg" alt="Descricao da imagem" />
+<img src="assets/img/crise-inglaterra-01.jpg" alt="Descrição da imagem" />
 ```
